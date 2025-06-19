@@ -36,10 +36,7 @@ export default function CreateListing() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const defaultUrls = [
-      'https://images.unsplash.com/photo-1600585153837-99a6c46dfb2b',
-      'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd3',
-    ];
+    
     setFormData((prevFormData) => ({
       ...prevFormData,
       imageUrls: [...defaultUrls.slice(0, 6)],
